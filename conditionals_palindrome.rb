@@ -15,4 +15,6 @@
 # hannah
 # true
 
-p "Enter one word"
+p "Enter one word:"
+word = gets.chomp.downcase
+p word.reverse == word
