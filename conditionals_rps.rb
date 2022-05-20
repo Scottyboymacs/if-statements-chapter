@@ -8,15 +8,22 @@
 
 
 
-p 'Please choose rock, paper, or scissors:'
 play = gets.chomp.downcase
-
-p 'The computer plays scissors!'
+p 'Please choose rock, paper, or scissors:'
 
 if play == 'rock'
+
+p 'You played rock!'
+p 'The computer played scissors!'
 p 'You won!'
 elsif play == 'scissors'
-p 'You tied!'
+  p 'Please choose rock, paper, or scissors:'
+  p 'You played scissors!'
+  p 'The computer played scissors!'
+  p 'You tied!'
 elsif play == 'paper'
-p 'You lost!'  
+  p 'Please choose rock, paper, or scissors:'
+  p 'You played paper!'
+  p 'The computer played scissors!'
+  p 'You lost!'
 end
